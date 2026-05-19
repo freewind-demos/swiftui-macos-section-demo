@@ -11,6 +11,7 @@ targets:
   SwiftUISectionDemo:
     type: application
     platform: macOS
+    productName: SwiftUISectionDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUISectionDemo:
+    build:
+      targets:
+        SwiftUISectionDemo: all
+    run:
+      config: Debug
